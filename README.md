@@ -21,7 +21,7 @@ As method a detailed elevation data is needed to assess the height and structure
 
 The solar potential analysis is conducted using QGIS (Version 3.34 Prizen), a free open-source geographic information system. An automated model is created using the integrated Model Builder Tool, which processes several steps in a workflow with the input data. It also handles complex tasks easier. For solar radiation analysis the GRASS GIS module r.insoltime (integrated in QGIS) is needed, a specialized tool for calculating daily solar radiation. This module calculates the amount of sunlight that hits different surfaces, considering geographic factors such as slope, height, and aspect (direction of the slope). Additionally with the implemented data of DSM, the shadow effects of the surrounding area are also considered in the calculation. To further improve the accuracy, weather data are added, as atmospheric conditions can significantly influence solar radiation results. Without the weather data, the model would assume a clear sky. Platforms like the Photovoltaic Geoinformation System (PVGIS), maintained by the European Union, provides weather data such as the diffuse-to-global irradiation ratio. Furthermore, Meteonorm 8.0 offers values for the Linke turbidity factor, which is a measure of atmospheric clarity. 
 
-For those interested in the technical implementation, can check out the code and processing steps in our GitHub repository: (Link)
+For those interested in the technical implementation, can check out the code and processing steps in our GitHub repository: (https://solar-energy-model-heidelberg.github.io/Solar_Potential_Heidelberg_Lay_Kert/)
 
 
 ## Results
