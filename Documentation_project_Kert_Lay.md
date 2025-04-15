@@ -1,4 +1,4 @@
-# Solar Potential Analysis In Neuenheim And Bergheim
+# Solar Potential Analysis In Neuenheim
 
 
 
