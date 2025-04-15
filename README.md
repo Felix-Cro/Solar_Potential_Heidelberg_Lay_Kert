@@ -51,7 +51,7 @@ Smaller architectural elements like chimneys on roofs can't be examined at this 
 
 ## Limitations
 
-With the use of OSM data, it can't be guaranteed that the building data is complete or accurate (e.g. building type). So, the data should be taken with caution. Further, our model is based on potential solar irradiation, meaning that all buildings in the selected district are evaluated to identify suitable rooftops for installing solar panels based on that parameter. But suitability is also depends on other factors like roof materials, which the model has no information about.
+With the use of OSM data, it can't be guaranteed that the building data is complete or accurate (e.g. building type). So, the data should be taken with caution. Further, our model is based on potential solar irradiation, meaning that all buildings in the selected district are evaluated to identify suitable rooftops for installing solar panels based on that parameter. But suitability also depends on other factors like roof materials, which the model has no information about.
  
 
 ## Future steps
