@@ -37,7 +37,7 @@ For those interested in the technical implementation, can check out the code and
 
 The solar irradiation map for the Neuenheim district of Heidelberg reveals distinct patterns in solar irradiation across different building types (Figure 1). The results are visualized using a color scale that ranges from blue (lowest solar potential) to red (highest). The values are in the unit yearly Wh/m² per day in average. 
 
-The Neuenheim district can be roughly divided in two parts: on the left side, the university campus of Heidelberg and on the right side, the residential area. In general, the solar potential seems to be high, as most of the buildings are colored in orange or red tones. 
+The Neuenheim district can be roughly divided in two parts (Fig. 2): on the left side, the university campus of Heidelberg and on the right side, the residential area. In general, the solar potential seems to be high, as most of the buildings are colored in orange or red tones. 
 
 Public buildings, such as the university facilities, tend to have flat or low-pitched roofs (compared with Google Satellite Map). These rooftops show relatively high and consistent solar potential (around 3500-4500 Wh/m<sup>2</sup>/day) (Figure 2a). They mostly are presented in orange and yellow shades. Due to the flat geometry there is minimal shading. 
 
