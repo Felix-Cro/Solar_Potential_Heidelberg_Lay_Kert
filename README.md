@@ -30,25 +30,24 @@ For those interested in the technical implementation, can check out the code and
 *Fig. 1: Overview-map*
 
 ![University-Campus](Fig_2_University_Buildings.png)
-*Fig. 2: University-Campus*
+*Fig. 2: University-Campus vs. residential area*
 
 ![Detailed-map](Fig_3_Details_solar.png)
 *Fig. 3: Detailed-map*
 
-The solar irradiation map for the Neuenheim district of Heidelberg reveals distinct patterns in solar irradiation across different building types (Figure 1). The results are visualized using a color scale that ranges from blue (lowest solar potential) to red (highest). The values are in the unit yearly Wh/m² per day in average. 
+The solar irradiation map for the Neuenheim district of Heidelberg reveals distinct patterns in solar irradiation across different building types (Figure 1). The results are visualized using a color scale that ranges from blue (lowest solar potential) to red (highest). The values are in the unit yearly Wh/m² per day on average. 
 
-The Neuenheim district can be roughly divided in two parts (Fig. 2): on the left side, the university campus of Heidelberg and on the right side, the residential area. In general, the solar potential seems to be high, as most of the buildings are colored in orange or red tones. 
+The Neuenheim district can be roughly divided in two parts: on the left side, the university campus of Heidelberg and on the right side, the residential area (Figure 2). In general, the solar potential seems to be high, as most of the buildings are colored in orange or red tones. 
 
-Public buildings, such as the university facilities, tend to have flat or low-pitched roofs (compared with Google Satellite Map). These rooftops show relatively high and consistent solar potential (around 3500-4500 Wh/m<sup>2</sup>/day) (Figure 2a). They mostly are presented in orange and yellow shades. Due to the flat geometry there is minimal shading. 
+Public buildings, such as the university facilities, tend to have flat or low-pitched roofs (compared with Google Satellite Map). These rooftops show relatively high and consistent solar potential (around 3500-4500 Wh/m<sup>2</sup>/day) (Figure 3a). They mostly are presented in orange and yellow shades. Due to the flat geometry there is minimal shading. 
 
-Residential buildings which mostly have pitched roofs commonly found in Germany, show more variation (Figure 2b). The south-facing roof sides often appear in red, indicating high solar exposure (over 4500 Wh/m<sup>2</sup>/day). In contrast, the north-facing sides are usually in blue or green shades, representing lower solar irradiation (under 3500 Wh/m<sup>2</sup>/day). It aligns with the position of the sun during the day, as the north sided roofs are turned away from the sun while the south sides receive much more sunlight. Furthermore, buildings with vertically oriented roofs (facing west and east) also show high solar potential, mostly in orange tones.  Also, whether a building stands alone or is part of a terrace row appears to have little effect on this spatial pattern.
+Residential buildings which mostly have pitched roofs commonly found in Germany, show more variation (Figure 3b). The south-facing roof sides often appear in red, indicating high solar exposure (over 4500 Wh/m<sup>2</sup>/day). In contrast, the north-facing sides are usually in blue or green shades, representing lower solar irradiation (under 3500 Wh/m<sup>2</sup>/day). It aligns with the position of the sun during the day, as the north sided roofs are turned away from the sun while the south sides receive much more sunlight. Furthermore, buildings with vertically oriented roofs (facing west and east) also show high solar potential, mostly in orange tones.  Also, whether a building stands alone or is part of a terrace row appears to have little effect on this spatial pattern.
 
 There is to note that the rooftop materials and even their color can vary significantly—from traditional clay tiles to concrete or even glass. These differences can influence how much solar energy a surface can absorb. But to really understand the effect, more detailed data would be needed. 
 
-Buildings surrounded by tall trees tend to show lower irradiation values. The vegetation likely provide shade and reduce the solar potential of nearby rooftops. For example this effect can be especially seen at the buildings near the Heiligenberg mountain on the east side (Figure 2c). This cooling and shading effect is visible in the color scale and reflects the influence of surrounding vegetation on solar access.  A similar reduction in solar potential can also be seen in areas where buildings of different heights are located close to one another. Due to the limited spacing, the taller buildings cast shadows on the smaller rooftops which leading to a decrease in solar exposure (Figure 2d). 
+Buildings surrounded by tall trees tend to show lower irradiation values. The vegetation likely provide shade and reduce the solar potential of nearby rooftops. For example this effect can be especially seen at the buildings near the Heiligenberg mountain on the east side (Figure 3c). This cooling and shading effect is visible in the color scale and reflects the influence of surrounding vegetation on solar access.  A similar reduction in solar potential can also be seen in areas where buildings of different heights are located close to one another. Due to the limited spacing, the taller buildings cast shadows on the smaller rooftops which leading to a decrease in solar exposure (Figure 3d). 
 
 Smaller architectural elements like chimneys on roofs can't be examined at this resolution and therefore can't be evaluated for their influence on solar potential. In conclusion, the areas with high solar potential like the red highlighted rooftops facing south are most suitable for installing solar panels. However, factors such as the condition or material of the rooftop can be a challenge for the construction. 
-
 
 ## Limitations
 
