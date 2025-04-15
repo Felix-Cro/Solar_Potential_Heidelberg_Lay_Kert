@@ -19,7 +19,7 @@ This study focuses on the urban district of Neuenheim in the city of Heidelberg 
 
 As method a detailed elevation data is needed to assess the height and structure of buildings in Neuenheim. The Landesamt für Geoinformation und Landentwicklung Baden-Württemberg (LGL) provides a digital surface model (DSM) at a resolution of 1 m x 1 m. The building data are extracted from OpenStreetMap (OSM), an open-source platform where users around the world contribute geographic data. Using the HOT Export Tool, a method for extracting specific datasets from OSM, buildings as a data for the study area is extracted. This dataset allows the spatial location of buildings to be identified.
 
-The solar potential analysis is conducted using QGIS (Version 3.34 Prizen), a free open-source geographic information system. An automated model is created using the integrated Model Builder Tool, which processes several steps in a workflow with the input data. It also handles complex tasks easier. For solar radiation analysis the GRASS GIS module r.insoltime (integrated in QGIS) is needed, a specialized tool for calculating daily solar radiation. This module calculates the amount of sunlight that hits different surfaces, considering geographic factors such as slope, height, and aspect (direction of the slope). Additionally with the implemented data of DSM, the shadow effects of the surrounding area are also considered in the calculation. To further improve the accuracy, weather data are added, as atmospheric conditions can significantly influence solar radiation results. Without the weather data, the model would assume a clear sky. Platforms like the Photovoltaic Geoinformation System (PVGIS), maintained by the European Union, provides weather data such as the diffuse-to-global irradiation ratio. Furthermore, Meteonorm 8.0 offers values for the Linke turbidity factor, which is a measure of atmospheric clarity. 
+The solar potential analysis is conducted using QGIS (Version 3.34 Prizen), a free open-source geographic information system. An automated model is created using the integrated Model Builder Tool, which processes several steps in a workflow with the input data. It also handles complex tasks easier. For solar radiation analysis the GRASS GIS module r.insoltime (integrated in QGIS) is needed, a specialized tool for calculating daily solar radiation. This module calculates the amount of sunlight that hits different surfaces, considering geographic factors such as slope, height, and aspect (direction of the slope). Additionally with the implemented data of DSM, the shadow effects of the surrounding area are also considered in the calculation. To further improve the accuracy, weather data are added, as atmospheric conditions can significantly influence solar radiation results. Without the weather data, the model would assume a clear sky which doesn't reflect the reality. Platforms like the Photovoltaic Geoinformation System (PVGIS), maintained by the European Union, provides weather data such as the diffuse-to-global irradiation ratio. Furthermore, Meteonorm 8.0 offers values for the Linke turbidity factor, which is a measure of atmospheric clarity. 
 
 For those interested in the technical implementation, can check out the code and processing steps in our GitHub repository: ([Link](https://courses.gistools.geog.uni-heidelberg.de/qk232/solar_potential_heidelberg_lay_kert))
 
@@ -49,14 +49,7 @@ Smaller architectural elements like chimneys on roofs can't be examined at this 
 
 ## Limitations
 
-### Building suitability:
-  * Our model calculates the global solar irradiation for all buildings in a district and therefore shows which buildings are suitable for solar panels.
-  * But solar exposure is only one factor for the buidling suitability.
-  * For example the model doesnt analyse the material or the condition of rooftops and how the hamper building suitability for solar panels.
-
-### OpenStreetMap data:
-  * The data could be flawed and not contain all buildings of districts we analyse.
-  * The data could have buildings with an incorrectly assigned building type.
+With the use of OSM data, it can't be guaranteed that the building data is complete or accurate (e.g. building type). So, the data should be taken with caution. Further, our model is based on potential solar irradiation, meaning that all buildings in the selected district are evaluated to identify suitable rooftops for installing solar panels based on that parameter. But suitability is also depends on other factors like roof materials, which the model has no information about.
  
 
 ## Future steps
