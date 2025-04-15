@@ -29,11 +29,11 @@ For those interested in the technical implementation, can check out the code and
 ![Overview-map](Fig_1_Uebersichtkarte.png)
 *Fig. 1: Overview-map*
 
-![Detailed-map](Fig_2_Details_solar.png)
-*Fig. 2: Detailed-map*
-
-![University-Campus](Fig__5_University_Buildings.png)
+![University-Campus](Fig_2_University_Buildings.png)
 *Fig. 2: University-Campus*
+
+![Detailed-map](Fig_3_Details_solar.png)
+*Fig. 3: Detailed-map*
 
 The solar irradiation map for the Neuenheim district of Heidelberg reveals distinct patterns in solar irradiation across different building types (Figure 1). The results are visualized using a color scale that ranges from blue (lowest solar potential) to red (highest). The values are in the unit yearly Wh/m² per day in average. 
 
