@@ -21,7 +21,7 @@ As method a detailed elevation data is needed to assess the height and structure
 
 The solar potential analysis is conducted using QGIS (Version 3.34 Prizen), a free open-source geographic information system. An automated model is created using the integrated Model Builder Tool, which processes several steps in a workflow with the input data. It also handles complex tasks easier. For solar radiation analysis the GRASS GIS module r.insoltime (integrated in QGIS) is needed, a specialized tool for calculating daily solar radiation. This module calculates the amount of sunlight that hits different surfaces, considering geographic factors such as slope, height, and aspect (direction of the slope). Additionally with the implemented data of DSM, the shadow effects of the surrounding area are also considered in the calculation. To further improve the accuracy, weather data are added, as atmospheric conditions can significantly influence solar radiation results. Without the weather data, the model would assume a clear sky. Platforms like the Photovoltaic Geoinformation System (PVGIS), maintained by the European Union, provides weather data such as the diffuse-to-global irradiation ratio. Furthermore, Meteonorm 8.0 offers values for the Linke turbidity factor, which is a measure of atmospheric clarity. 
 
-For those interested in the technical implementation, can check out the code and processing steps in our GitHub repository: (https://solar-energy-model-heidelberg.github.io/Solar_Potential_Heidelberg_Lay_Kert/)
+For those interested in the technical implementation, can check out the code and processing steps in our GitHub repository: ([Link](https://courses.gistools.geog.uni-heidelberg.de/qk232/solar_potential_heidelberg_lay_kert))
 
 
 ## Results
@@ -47,23 +47,23 @@ Buildings surrounded by tall trees tend to show lower irradiation values. The ve
 Smaller architectural elements like chimneys on roofs can't be examined at this resolution and therefore can't be evaluated for their influence on solar potential. In conclusion, the areas with high solar potential like the red highlighted rooftops facing south are most suitable for installing solar panels. However, factors such as the condition or material of the rooftop can be a challenge for the construction. 
 
 
-## Future steps
-
-This project shows an effective utilization of FOSSGIS geodata and tools for solar potential analysis and visualize the spatial variation of rooftops. The patterns are caused by the differing roof and environmental characteristics. It can be concluded that potentially the orientation and slope of the buildings are most influential factors for the solar potential. Also, the shadow cast of objects like vegetation can cause irregular patterns and reduction of solar potential. For the data it’s important to note that the finer details can only be seen with high resolution DSMs. The modeling process can be a bit time-consuming, but in the end, the level of insight gained makes the effort more than worth it. As further steps the seasonal trends can be calculated or the solar irradiation data can be compared to other weather data for improving the accuracy of the model. A more advanced extension would be using machine learning techniques or 3D data like LiDAR for an enhanced prediction and geometric precision of the model.  
-
-We encourage you to explore our solar potential model using data from your own or a chosen locality, and feel free to share your feedback to help us refine and expand the model’s capabilities. If you have any questions or would like to share your results, you can contact us at solar-energy-model@stud.uni-heidelberg.de or reach out via our GitHub page.
-
-
 ## Limitations
 
 ### Building suitability:
   * Our model calculates the global solar irradiation for all buildings in a district and therefore shows which buildings are suitable for solar panels.
   * But solar exposure is only one factor for the buidling suitability.
-	* For example the model doesnt analyse the material or the condition of rooftops and how the hamper building suitability for solar panels.
+  * For example the model doesnt analyse the material or the condition of rooftops and how the hamper building suitability for solar panels.
 
 ### OpenStreetMap data:
   * The data could be flawed and not contain all buildings of districts we analyse.
-	* The data could have buildings with an incorrectly assigned building type.
+  * The data could have buildings with an incorrectly assigned building type.
+ 
+
+## Future steps
+
+This project shows an effective utilization of FOSSGIS geodata and tools for solar potential analysis and visualize the spatial variation of rooftops. The patterns are caused by the differing roof and environmental characteristics. It can be concluded that potentially the orientation and slope of the buildings are most influential factors for the solar potential. Also, the shadow cast of objects like vegetation can cause irregular patterns and reduction of solar potential. For the data it’s important to note that the finer details can only be seen with high resolution DSMs. The modeling process can be a bit time-consuming, but in the end, the level of insight gained makes the effort more than worth it. As further steps the seasonal trends can be calculated or the solar irradiation data can be compared to other weather data for improving the accuracy of the model. A more advanced extension would be using machine learning techniques or 3D data like LiDAR for an enhanced prediction and geometric precision of the model.  
+
+We encourage you to explore our solar potential model using data from your own or a chosen locality, and feel free to share your feedback to help us refine and expand the model’s capabilities. If you have any questions or would like to share your results, you can contact us at solar-energy-model@stud.uni-heidelberg.de or reach out via our GitHub page.
 
 
 ## Authors
