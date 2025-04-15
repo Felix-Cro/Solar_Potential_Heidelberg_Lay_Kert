@@ -32,8 +32,8 @@ Before we can load the collected data into our model, we first have to pre-proce
 ### Model Design
 Our model has the following seven inputs.
 
-![QGIS-Model-Inputs](Fig_3_Model_Inputs_Table.png)
-*Fig. 3: The Inputs of our QGIS-Model*
+![QGIS-Model-Inputs](Fig_4_Model_Inputs_Table.png)
+*Fig. 4: The Inputs of our QGIS-Model*
 
   * Distritc Boundary Layer, **vector layer input**: A vector layer containig the boundray of the district in Heidelberg you want to analyse.
 	* Buildings Layer, **vector layer input**: A vector layer containing all buildings in Heidelberg.
@@ -44,8 +44,8 @@ Our model has the following seven inputs.
 	* Linke Turbidity, **raster layer input**: 12 constant raster layer containing the value of the linke tubidity factor for each month.
 
 
-![QGIS-Model](Fig_4_Model.png)
-*Fig. 4: The QGIS-Model*
+![QGIS-Model](Fig_5_Model.png)
+*Fig. 5: The QGIS-Model*
 
 With these inputs our model, with the GDAL tool **Clip raster by mask layer** first clips the DSM with the District Boundary Layer to shrink the DSM to the extent of the district we want to analyse. This is important as a analysis of the full DSM of Heidelberg needs too much computing power and crashed QGIS. In the next step we calculate the slope and aspect of the created district DSM layer with the GRASS GIS tool **r.slope.aspect**. 
 Then with the tool **r.sun.insoltime**, the weather data inputs, the district DSM layer and the calculated slope and aspect of the district we calculate the global solar irradiation for the whole district. 
