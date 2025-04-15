@@ -28,6 +28,7 @@ Before we can load the collected data into our model, we first have to pre-proce
   - The csv file of the d/g solar radiation ration also needs to be pre-processed. For each month we create a new constant raster layer containing the value of the d/g radiation ratio of the corresponding month. This is important as the solar irradiation we analyse will be calculated for the recommend average day of each month.
   - Since we used the demo version of Meteonorm 8.0 we could only see the values of the linke turbidity factor and not extract them in a file. Therefore we have to create a new constant raster layer for each month containig the corresponding linke turbidity factor value.
 
+
 ### Model Design
 Our model has the following seven inputs.
 
